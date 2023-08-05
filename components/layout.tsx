@@ -1,18 +1,5 @@
-import {
-  AppBar,
-  Avatar,
-  Box,
-  Button,
-  Container,
-  IconButton,
-  Menu,
-  MenuItem,
-  Toolbar,
-  Tooltip,
-  Typography,
-} from "@mui/material";
-import pages from "../pages";
-import ResponsiveAppBar from "./responsiveAppBar";
+import { Container } from "@mui/material";
+import ResponsiveAppBar from "./ResponsiveAppBar";
 
 export default function Layout({
   children,

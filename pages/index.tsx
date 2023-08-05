@@ -1,15 +1,13 @@
 import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
+import YouTube from "react-youtube";
 import Link from "../src/Link";
 import ProTip from "../src/ProTip";
 import { siteTitle } from "./_app";
-import YouTube from "react-youtube";
-import Layout from "../components/layout";
 
 export default function Home() {
   return (
-    <Layout>
+    <>
       <Box
         sx={{
           my: 4,
@@ -81,6 +79,6 @@ export default function Home() {
         <YouTube videoId="fYVO7ulhOp0" />
         <ProTip />
       </Box>
-    </Layout>
+    </>
   );
 }

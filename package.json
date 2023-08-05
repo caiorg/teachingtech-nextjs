@@ -21,7 +21,6 @@
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
-    "react-youtube": "^10.1.0",
     "slugify": "^1.6.6"
   },
   "devDependencies": {

@@ -1,0 +1,15 @@
+.responsiveIframe {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  width: 100%;
+}
+
+.responsiveIframe iframe {
+  position: absolute;
+  align-self: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

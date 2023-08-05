@@ -1,12 +1,20 @@
 import { Box } from "@mui/material";
-import { ReactElement } from "react";
+import hljs from "highlight.js";
+import gcode from "highlight.js/lib/languages/gcode";
+import { ReactElement, useEffect } from "react";
 import NavTabs from "../components/NavTabs";
+
+hljs.registerLanguage("gcode", gcode);
 
 export default function CalibrationLayout({
   children,
 }: {
   children: ReactElement;
 }) {
+  useEffect(() => {
+    hljs.initHighlighting();
+  });
+
   return (
     <Box
       sx={{
@@ -27,8 +35,12 @@ export default function CalibrationLayout({
             href: "/calibration/frame-check",
           },
           {
-            label: "Page Three",
-            href: "/spam",
+            label: "PID Autotune",
+            href: "/calibration/pid-autotune",
+          },
+          {
+            label: "First Layer",
+            href: "/calibration/first-layer",
           },
         ]}>
         {children}

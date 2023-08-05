@@ -2,23 +2,16 @@ import { Alert, AlertTitle, Grid, Link } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { GetStaticProps } from "next";
-import { useEffect, type ReactElement } from "react";
-import YouTube from "react-youtube";
+import { type ReactElement } from "react";
+import Youtube from "../../components/Youtube";
 import CalibrationLayout from "../../layouts/CalibrationLayout";
 import { getGcode } from "../../lib/gcodes";
-import hljs from "highlight.js";
-import gcode from "highlight.js/lib/languages/gcode";
-hljs.registerLanguage("gcode", gcode);
 
 const CalibrationIntroduction = ({
   gcodes,
 }: {
   gcodes: Record<string, string>;
 }) => {
-  useEffect(() => {
-    hljs.initHighlighting();
-  });
-
   return (
     <Box
       sx={{
@@ -49,10 +42,10 @@ const CalibrationIntroduction = ({
       </Typography>
       <Grid container spacing={2}>
         <Grid item xs={6}>
-          <YouTube videoId="rp3r921DBGI" style={{ width: "100%" }} />
+          <Youtube videoId="rp3r921DBGI" />
         </Grid>
         <Grid item xs={6}>
-          <YouTube videoId="9kDK7czgMxc" style={{ width: "100%" }} />
+          <Youtube videoId="9kDK7czgMxc" />
         </Grid>
       </Grid>
       <Typography variant="body1">

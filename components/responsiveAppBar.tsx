@@ -15,7 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import Image from "next/image";
 import { siteTitle } from "../pages/_app";
 
-const pages = ["Products", "Pricing", "Blog"];
+const pages = ["Calibration"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {

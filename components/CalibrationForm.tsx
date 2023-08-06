@@ -259,6 +259,7 @@ export default function CalibrationForm({ children }: { children: ReactNode }) {
                 </Alert>
                 <TextField
                   multiline
+                  fullWidth
                   value={additionalStartGCode}
                   onChange={handleAdditionalStartGCode}
                 />
@@ -397,6 +398,7 @@ export default function CalibrationForm({ children }: { children: ReactNode }) {
               </Alert>
               <TextField
                 multiline
+                fullWidth
                 value={additionalEndGCode}
                 onChange={handleAdditionalEndGCode}
               />

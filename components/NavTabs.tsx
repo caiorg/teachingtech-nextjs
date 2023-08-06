@@ -33,7 +33,7 @@ export default function NavTabs({
   children: React.ReactNode;
 }) {
   const router = useRouter();
-  const [value, setValue] = React.useState(slugify(tabs[0].label));
+  const [value, setValue] = React.useState(tabs[0].href);
 
   const handleChange = (event: React.SyntheticEvent, newValue: string) => {
     setValue(newValue);
@@ -49,7 +49,6 @@ export default function NavTabs({
             label={label}
             href={href}
             value={href}
-            // value={slugify(label)}
           />
         ))}
       </TabList>

@@ -1,4 +1,4 @@
-import { Alert, AlertTitle, Grid, Link } from "@mui/material";
+import { Alert, AlertTitle, Grid } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { GetStaticProps } from "next";
@@ -6,6 +6,7 @@ import { type ReactElement } from "react";
 import Youtube from "../../components/Youtube";
 import CalibrationLayout from "../../layouts/CalibrationLayout";
 import { getGcode } from "../../lib/gcodes";
+import Link from "next/link";
 
 const CalibrationIntroduction = ({
   gcodes,

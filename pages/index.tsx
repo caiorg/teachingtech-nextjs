@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import YouTube from "react-youtube";
-import Link from "../src/Link";
+import Link from "next/link";
+import Youtube from "../components/Youtube";
 import ProTip from "../src/ProTip";
 import { siteTitle } from "./_app";
 
@@ -76,7 +76,7 @@ export default function Home() {
           proved to be accurate. Although I primarily focus on 3D printing, I
           have covered everything listed except video editing.
         </Typography>
-        <YouTube videoId="fYVO7ulhOp0" />
+        <Youtube videoId="fYVO7ulhOp0" />
         <ProTip />
       </Box>
     </>

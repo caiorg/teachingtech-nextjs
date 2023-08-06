@@ -1,9 +1,10 @@
-import { Link, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import { type ReactElement } from "react";
 import Youtube from "../../components/Youtube";
 import CalibrationLayout from "../../layouts/CalibrationLayout";
+import Link from "next/link";
 
 const CalibrationPidAutotune = () => {
   return (

@@ -1,16 +1,17 @@
-import { Container } from "@mui/material";
-import ResponsiveAppBar from "./ResponsiveAppBar";
+import ResponsiveAppBar from "./responsiveAppBar";
 
 export default function Layout({
   children,
 }: {
   children: React.ReactNode;
-  home?: boolean;
+  home?: boolean; // home prop remains, though not used in this basic layout
 }) {
   return (
     <>
       <ResponsiveAppBar />
-      <Container maxWidth="lg">{children}</Container>
+      <main className="mx-auto max-w-screen-lg px-4 py-6 sm:px-6 lg:px-8">
+        {children}
+      </main>
     </>
   );
 }

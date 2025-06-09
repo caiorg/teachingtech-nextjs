@@ -1,5 +1,5 @@
 import { Container } from "@mui/material";
-import ResponsiveAppBar from "./ResponsiveAppBar";
+import ResponsiveAppBar from "./responsiveAppBar";
 
 export default function Layout({
   children,
